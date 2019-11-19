@@ -32,15 +32,22 @@ function displayNone() {
 
 }
 function MaisykFoto() {
+    let naujas = foto
 
-        for (let i = foto.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1));
-            let temp = foto[i];
-            foto[i] = foto[j];
-            foto[j] = temp;
-            //console.log(temp)
-            const nauja = document.querySelector("img")
-            nauja.src='img/'+temp+'.png';
-    }
+    naujas.sort(function () {
+        return 0.8 - Math.random()
+    });
+    console.log(naujas)
+
+    const sukeistas = document.querySelectorAll('img');
+    for (kazkoks in sukeistas) {
+        console.log(sukeistas[kazkoks])
+
+        console.log(sukeistas[item].src = 'img/' + item + '.png');
 
     }
+}
+
+
+
+

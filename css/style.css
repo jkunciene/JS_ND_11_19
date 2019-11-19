@@ -1,0 +1,17 @@
+.container{
+    width: 80%;
+    background-color: ivory;
+    text-align: center;
+
+
+}
+img{
+    border-radius: 5%;
+    height: 250px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-table;
+}
