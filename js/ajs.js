@@ -33,21 +33,11 @@ function displayNone() {
 }
 function MaisykFoto() {
     let naujas = foto
-
     naujas.sort(function () {
         return 0.8 - Math.random()
     });
     console.log(naujas)
 
-    const sukeistas = document.querySelectorAll('img');
-    for (kazkoks in sukeistas) {
-        console.log(sukeistas[kazkoks])
-
-        console.log(sukeistas[item].src = 'img/' + item + '.png');
-
-    }
-}
-
-
-
-
+    const seni = document.querySelectorAll('img');
+                for(let i=0; i<naujas.length; i++){
+                  seni[i].src='img/'+naujas[i]+'.png' }}
