@@ -34,7 +34,7 @@ function displayNone() {
 function MaisykFoto() {
     let naujas = foto
     naujas.sort(function () {
-        return 0.8 - Math.random()
+        return 0.3 - Math.random()
     });
     console.log(naujas)
 
