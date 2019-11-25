@@ -31,13 +31,31 @@ function displayNone() {
     }
 
 }
+
 function MaisykFoto() {
     let naujas = foto
     naujas.sort(function () {
         return 0.3 - Math.random()
     });
-    console.log(naujas)
+    //console.log(naujas)
 
-    const seni = document.querySelectorAll('img');
-                for(let i=0; i<naujas.length; i++){
-                  seni[i].src='img/'+naujas[i]+'.png' }}
+const seni = document.querySelectorAll('img');
+for(let i=0; i<naujas.length; i++){
+                  seni[i].src='img/'+naujas[i]+'.png' }
+
+    const lis = document.querySelectorAll('img');
+    console.log('labas');
+    for(let i=0; i < lis.length; i++){
+        console.log('labas');
+        lis[i].ondblclick = function (e) {
+            let target = e.target
+
+            target.src = 'img/javascript.png';
+
+        }
+    }
+}
+
+
+
+
